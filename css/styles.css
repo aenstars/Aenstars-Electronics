@@ -3,10 +3,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background-color: #4a90e2;
+    background-color: #007bff; /* Changed to a brighter blue */
     color: white;
     padding: 15px 0;
 }
@@ -37,7 +38,7 @@ nav a {
 }
 
 .hero {
-    background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+    background: #ff5722; /* Changed to a more vibrant orange */
     color: white;
     padding: 50px 0;
     text-align: center;
@@ -45,11 +46,23 @@ nav a {
 
 .cta {
     display: inline-block;
-    background-color: #e94e77;
-    color: white;
+    background-color: #ffc107; /* Changed to a bright yellow */
+    color: #333; /* Changed text color for contrast */
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+}
+
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #007bff; /* Match the header color */
 }
 
 .product-container {
@@ -66,6 +79,7 @@ nav a {
     padding: 10px;
     width: 200px;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
 }
 
 footer {
@@ -89,16 +103,22 @@ form input, form textarea {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
+    border: 1px solid #007bff; /* Match the header color */
 }
 
 button {
-    background-color: #4a90e2;
+    background-color: #007bff; /* Brighter blue */
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    border-radius: 5px; /* Added rounded corners */
 }
 
 button:hover {
-    background-color: #e94e77;
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.faq {
+    margin: 20px;
 }
