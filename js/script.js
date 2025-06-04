@@ -1,12 +1,12 @@
 // Handle contact form submission
-document.getElementById('contactForm').addEventListener('submit', function(e) {
+document.getElementById('contactForm')?.addEventListener('submit', function(e) {
     e.preventDefault();
     alert('Thank you for your message!');
     this.reset();
 });
 
 // Handle adding products in the admin panel
-document.getElementById('productForm').addEventListener('submit', function(e) {
+document.getElementById('productForm')?.addEventListener('submit', function(e) {
     e.preventDefault();
     const productName = document.getElementById('productName').value;
     const productDescription = document.getElementById('productDescription').value;
@@ -21,7 +21,7 @@ document.getElementById('productForm').addEventListener('submit', function(e) {
         <h3>${productName}</h3>
         <p>${productDescription}</p>
         <p>Price: $${productPrice}</p>
-        <img src="${productImage}" alt="${productName}">
+        <img src="${productImage}" alt="${productName}" style="width: 100%;">
     `;
     productContainer.appendChild(productDiv);
     this.reset(); // Reset the form after submission

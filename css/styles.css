@@ -1,15 +1,7 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
 header {
-    background-color: #007bff; /* Changed to a brighter blue */
+    background-color: #007bff; /* Bright blue background */
     color: white;
-    padding: 15px 0;
+    padding: 20px 0;
 }
 
 .container {
@@ -18,107 +10,54 @@ header {
     overflow: hidden;
 }
 
-h1, h2 {
+h1 {
     text-align: center;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin: 0 15px;
 }
 
-nav a {
+nav ul li a {
     color: white;
     text-decoration: none;
 }
 
 .hero {
-    background: #ff5722; /* Changed to a more vibrant orange */
-    color: white;
-    padding: 50px 0;
+    background: #e2e2e2;
+    padding: 20px;
     text-align: center;
-}
-
-.cta {
-    display: inline-block;
-    background-color: #ffc107; /* Changed to a bright yellow */
-    color: #333; /* Changed text color for contrast */
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.search-container {
-    text-align: center;
-    margin: 20px 0;
-}
-
-#searchInput {
-    padding: 10px;
-    width: 80%;
-    max-width: 400px;
-    border: 1px solid #007bff; /* Match the header color */
 }
 
 .product-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
+    justify-content: space-between;
 }
 
 .product {
-    background-color: white;
+    background: white;
     border: 1px solid #ccc;
+    border-radius: 5px;
     margin: 10px;
-    padding: 10px;
-    width: 200px;
+    padding: 15px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+    width: calc(30% - 20px); /* Adjust width for responsive design */
 }
 
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
-}
-
-form {
-    max-width: 600px;
-    margin: auto;
-}
-
-form label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
-form input, form textarea {
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
     width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #007bff; /* Match the header color */
-}
-
-button {
-    background-color: #007bff; /* Brighter blue */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px; /* Added rounded corners */
-}
-
-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-}
-
-.faq {
-    margin: 20px;
 }
